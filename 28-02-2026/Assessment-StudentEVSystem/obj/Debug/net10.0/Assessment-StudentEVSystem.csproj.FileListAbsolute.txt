@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\bin\Debug\net10.0\Assessment-StudentEVSystem.exe
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\bin\Debug\net10.0\Assessment-StudentEVSystem.deps.json
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\bin\Debug\net10.0\Assessment-StudentEVSystem.runtimeconfig.json
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\bin\Debug\net10.0\Assessment-StudentEVSystem.dll
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\bin\Debug\net10.0\Assessment-StudentEVSystem.pdb
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.sourcelink.json
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.dll
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\refint\Assessment-StudentEVSystem.dll
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.pdb
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\Assessment-StudentEVSystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\28-02-2026\Assessment-StudentEVSystem\obj\Debug\net10.0\ref\Assessment-StudentEVSystem.dll
