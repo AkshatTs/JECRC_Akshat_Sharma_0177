@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using DataType</title>
+</head>
+<body>
+    <h1>Using Variable</h1>
+    <p id = output></p>
+    <script>
+        var name = "Alice";
+        var name = "Bob";
+        console.log(name);
+
+        document.getElementById("output").textContent = name;
+        console.log("\n======= FUNCTION SCOPE =======");
+
+        function testVar(){
+            var name = "Charlie";
+            console.log(name);
+        }
+        testVar();
+        console.log(name);
+
+        console.log("\n====== Primitive Data Type ======");
+        let name2 = "David";
+        let age = 30;
+        let isStudent = false;
+        let salary;
+        let bonus = null;
+        let bigNumber = 900719925475637n;
+        
+        console.log(typeof name2);
+        console.log(typeof age);
+        console.log(typeof isStudent);
+        console.log(typeof salary);
+        console.log(typeof bonus);
+        console.log(typeof bigNumber);
+
+        console.log("\n====== Non Primitive Data Type ======");
+        let person = {name : "Eve", age : 25};
+        let numbers = [1, 2, 3, 4];
+        let today = new Date();
+        function greet(){
+            return "Welcome!";
+        }
+        console.log(typeof greet);
+        console.log(typeof person);
+        console.log(typeof numbers);
+        console.log(typeof today);
+    </script>
+</body>
+</html>

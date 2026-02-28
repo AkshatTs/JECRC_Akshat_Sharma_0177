@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day4\interface1\bin\Debug\net10.0\interface1.exe
+D:\dotNetProjects\Training\Day4\interface1\bin\Debug\net10.0\interface1.deps.json
+D:\dotNetProjects\Training\Day4\interface1\bin\Debug\net10.0\interface1.runtimeconfig.json
+D:\dotNetProjects\Training\Day4\interface1\bin\Debug\net10.0\interface1.dll
+D:\dotNetProjects\Training\Day4\interface1\bin\Debug\net10.0\interface1.pdb
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.dll
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\refint\interface1.dll
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.pdb
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\interface1.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day4\interface1\obj\Debug\net10.0\ref\interface1.dll

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Inventory</title>
+</head>
+<body>
+
+    <h2>Task1</h2>
+
+    <script>
+        
+        // 1. Global Variables
+
+        const companyName = "Capgemini";
+        let warehouseLocation = "Bangalore";
+        var totalProducts = 0;
+
+        console.log("Company:", companyName);
+        console.log("Location:", warehouseLocation);
+
+        // 2. Array of Products
+
+        let products = [
+            { id: 1, name: "Laptop", price: 50000, quantity: 5 },
+            { id: 2, name: "Mobile", price: 20000, quantity: 10 },
+            { id: 3, name: "Headphones", price: 2000, quantity: 15 },
+            { id: 4, name: "Keyboard", price: 1500, quantity: 8 }
+        ];
+
+        // displayProducts()
+
+        function displayProducts() {
+            console.log("\n--- Product List ---");
+
+            for (let i = 0; i < products.length; i++) {
+                console.log("ID:", products[i].id, "| Name:", products[i].name, "| Price:", products[i].price, "| Quantity:", products[i].quantity);
+            }
+        }
+
+        // calculateInventoryValue()
+
+        function calculateInventoryValue() {
+            let totalValue = 0;
+
+            for (let i = 0; i < products.length; i++) {
+                totalValue += products[i].price * products[i].quantity;
+            }
+
+            return totalValue;
+        }
+
+        // applyDiscount()
+
+        function applyDiscount(discountPercent = 10) {
+            console.log(`\nApplying ${discountPercent}% Discount...`);
+
+            for (let i = 0; i < products.length; i++) {
+                let discount = (products[i].price * discountPercent) / 100;
+                products[i].price -= discount;
+            }
+        }
+
+        // Block Scope Demonstration
+
+        function blockScopeDemo() {
+
+            console.log("\nBefore Block:");
+            console.log("Location:", warehouseLocation);
+            console.log("Total Products:", totalProducts);
+
+            if (true) {
+                let warehouseLocation = "Delhi";
+                var totalProducts = 500;
+
+                console.log("\nInside Block:");
+                console.log("Location:", warehouseLocation);
+                console.log("Total Products:", totalProducts);
+            }
+
+            console.log("\nAfter Block:");
+            console.log("Location:", warehouseLocation);
+            console.log("Total Products:", totalProducts);
+        }
+
+        // Function Calls
+
+        displayProducts();
+
+        console.log("\nTotal Inventory Value:", calculateInventoryValue());
+
+        applyDiscount();
+        displayProducts();
+
+        blockScopeDemo();
+    </script>
+
+</body>
+</html>

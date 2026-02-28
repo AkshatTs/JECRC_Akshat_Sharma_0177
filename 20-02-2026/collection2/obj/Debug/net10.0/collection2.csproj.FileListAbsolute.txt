@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day5\collection2\bin\Debug\net10.0\collection2.exe
+D:\dotNetProjects\Training\Day5\collection2\bin\Debug\net10.0\collection2.deps.json
+D:\dotNetProjects\Training\Day5\collection2\bin\Debug\net10.0\collection2.runtimeconfig.json
+D:\dotNetProjects\Training\Day5\collection2\bin\Debug\net10.0\collection2.dll
+D:\dotNetProjects\Training\Day5\collection2\bin\Debug\net10.0\collection2.pdb
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.dll
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\refint\collection2.dll
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.pdb
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\collection2.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day5\collection2\obj\Debug\net10.0\ref\collection2.dll

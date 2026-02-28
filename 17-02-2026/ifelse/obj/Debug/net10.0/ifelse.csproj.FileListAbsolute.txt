@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day2\ifelse\bin\Debug\net10.0\ifelse.exe
+D:\dotNetProjects\Training\Day2\ifelse\bin\Debug\net10.0\ifelse.deps.json
+D:\dotNetProjects\Training\Day2\ifelse\bin\Debug\net10.0\ifelse.runtimeconfig.json
+D:\dotNetProjects\Training\Day2\ifelse\bin\Debug\net10.0\ifelse.dll
+D:\dotNetProjects\Training\Day2\ifelse\bin\Debug\net10.0\ifelse.pdb
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.dll
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\refint\ifelse.dll
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.pdb
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ifelse.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day2\ifelse\obj\Debug\net10.0\ref\ifelse.dll

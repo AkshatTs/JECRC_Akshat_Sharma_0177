@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day4\array1\bin\Debug\net10.0\array1.exe
+D:\dotNetProjects\Training\Day4\array1\bin\Debug\net10.0\array1.deps.json
+D:\dotNetProjects\Training\Day4\array1\bin\Debug\net10.0\array1.runtimeconfig.json
+D:\dotNetProjects\Training\Day4\array1\bin\Debug\net10.0\array1.dll
+D:\dotNetProjects\Training\Day4\array1\bin\Debug\net10.0\array1.pdb
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.dll
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\refint\array1.dll
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.pdb
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\array1.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day4\array1\obj\Debug\net10.0\ref\array1.dll

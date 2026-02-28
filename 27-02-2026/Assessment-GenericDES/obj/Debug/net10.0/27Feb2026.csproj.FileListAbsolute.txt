@@ -1,0 +1,15 @@
+D:\CapGemini\Assessment\27Feb2026\bin\Debug\net10.0\27Feb2026.exe
+D:\CapGemini\Assessment\27Feb2026\bin\Debug\net10.0\27Feb2026.deps.json
+D:\CapGemini\Assessment\27Feb2026\bin\Debug\net10.0\27Feb2026.runtimeconfig.json
+D:\CapGemini\Assessment\27Feb2026\bin\Debug\net10.0\27Feb2026.dll
+D:\CapGemini\Assessment\27Feb2026\bin\Debug\net10.0\27Feb2026.pdb
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.AssemblyInfoInputs.cache
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.AssemblyInfo.cs
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.csproj.CoreCompileInputs.cache
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.sourcelink.json
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.dll
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\refint\27Feb2026.dll
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.pdb
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\27Feb2026.genruntimeconfig.cache
+D:\CapGemini\Assessment\27Feb2026\obj\Debug\net10.0\ref\27Feb2026.dll

@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day3\Polymorph1\bin\Debug\net10.0\Polymorph1.exe
+D:\dotNetProjects\Training\Day3\Polymorph1\bin\Debug\net10.0\Polymorph1.deps.json
+D:\dotNetProjects\Training\Day3\Polymorph1\bin\Debug\net10.0\Polymorph1.runtimeconfig.json
+D:\dotNetProjects\Training\Day3\Polymorph1\bin\Debug\net10.0\Polymorph1.dll
+D:\dotNetProjects\Training\Day3\Polymorph1\bin\Debug\net10.0\Polymorph1.pdb
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.dll
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\refint\Polymorph1.dll
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.pdb
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\Polymorph1.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day3\Polymorph1\obj\Debug\net10.0\ref\Polymorph1.dll

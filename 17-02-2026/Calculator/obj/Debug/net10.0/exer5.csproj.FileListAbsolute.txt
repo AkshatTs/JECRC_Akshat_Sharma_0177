@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day2\exer5\bin\Debug\net10.0\exer5.exe
+D:\dotNetProjects\Training\Day2\exer5\bin\Debug\net10.0\exer5.deps.json
+D:\dotNetProjects\Training\Day2\exer5\bin\Debug\net10.0\exer5.runtimeconfig.json
+D:\dotNetProjects\Training\Day2\exer5\bin\Debug\net10.0\exer5.dll
+D:\dotNetProjects\Training\Day2\exer5\bin\Debug\net10.0\exer5.pdb
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.dll
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\refint\exer5.dll
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.pdb
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\exer5.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day2\exer5\obj\Debug\net10.0\ref\exer5.dll

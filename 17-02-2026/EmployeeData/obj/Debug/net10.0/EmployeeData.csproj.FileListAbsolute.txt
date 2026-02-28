@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day2\EmployeeData\bin\Debug\net10.0\EmployeeData.exe
+D:\dotNetProjects\Training\Day2\EmployeeData\bin\Debug\net10.0\EmployeeData.deps.json
+D:\dotNetProjects\Training\Day2\EmployeeData\bin\Debug\net10.0\EmployeeData.runtimeconfig.json
+D:\dotNetProjects\Training\Day2\EmployeeData\bin\Debug\net10.0\EmployeeData.dll
+D:\dotNetProjects\Training\Day2\EmployeeData\bin\Debug\net10.0\EmployeeData.pdb
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.dll
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\refint\EmployeeData.dll
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.pdb
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\EmployeeData.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day2\EmployeeData\obj\Debug\net10.0\ref\EmployeeData.dll

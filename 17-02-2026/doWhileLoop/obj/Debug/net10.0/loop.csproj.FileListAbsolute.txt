@@ -1,0 +1,4 @@
+D:\dotNetProjects\Training\Day2\loop\obj\Debug\net10.0\loop.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day2\loop\obj\Debug\net10.0\loop.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day2\loop\obj\Debug\net10.0\loop.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day2\loop\obj\Debug\net10.0\loop.csproj.CoreCompileInputs.cache

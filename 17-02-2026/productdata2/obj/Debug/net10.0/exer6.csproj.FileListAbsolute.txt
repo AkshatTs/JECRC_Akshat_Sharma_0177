@@ -1,0 +1,14 @@
+D:\dotNetProjects\Training\Day2\exer6\bin\Debug\net10.0\exer6.exe
+D:\dotNetProjects\Training\Day2\exer6\bin\Debug\net10.0\exer6.deps.json
+D:\dotNetProjects\Training\Day2\exer6\bin\Debug\net10.0\exer6.runtimeconfig.json
+D:\dotNetProjects\Training\Day2\exer6\bin\Debug\net10.0\exer6.dll
+D:\dotNetProjects\Training\Day2\exer6\bin\Debug\net10.0\exer6.pdb
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.AssemblyInfoInputs.cache
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.AssemblyInfo.cs
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.csproj.CoreCompileInputs.cache
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.dll
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\refint\exer6.dll
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.pdb
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\exer6.genruntimeconfig.cache
+D:\dotNetProjects\Training\Day2\exer6\obj\Debug\net10.0\ref\exer6.dll
