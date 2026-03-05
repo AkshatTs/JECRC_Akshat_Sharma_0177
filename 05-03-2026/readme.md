@@ -146,3 +146,111 @@ document.getElementById("product").addEventListener("dblclick", function(){
 
 });
 </script>
+
+
+
+Question
+6
+Track User Login Activity
+Description
+Track User Login Activity
+Scenario:
+In a web application, developers want to log when a user logs in for monitoring purposes.
+
+Requirement
+
+Capture login button click
+
+Send log to remote server
+
+Include username in log
+
+<input id="username" placeholder="Enter Username">
+<button onclick="login()">Login</button>
+
+<script>
+function login(){
+
+const user = document.getElementById("username").value;
+
+logger.log("INFO", "User Login Attempt", {username:user});
+
+}
+</script>
+
+
+
+Question
+7
+Log Form Validation Errors
+Description
+Log Form Validation Errors
+Scenario:
+If a user submits an invalid form, developers log the issue.
+
+function validateForm(){
+
+const email = document.getElementById("email").value;
+
+if(!email.includes("@")){
+
+logger.log("WARN","Invalid Email Entered",email);
+
+alert("Invalid email");
+
+}
+
+}
+
+
+
+
+Question
+8
+Track Button Click Analytics
+Description
+Track Button Click Analytics
+Scenario:
+A company wants to track which buttons users click the most.
+
+<button onclick="trackClick('Buy Now')">Buy Now</button>
+<button onclick="trackClick('Add Wishlist')">Add Wishlist</button>
+
+<script>
+
+function trackClick(action){
+
+logger.log("INFO","User Action:",action);
+
+}
+
+</script>
+
+
+
+
+Question
+9
+Monitor Page Load Performance
+Description
+Monitor Page Load Performance
+Scenario:
+Developers track how long a page takes to load.
+
+Requirement
+
+Use performance.now()
+
+Send duration to remote logger
+
+const start = performance.now();
+
+window.onload = function(){
+
+const end = performance.now();
+
+const loadTime = end - start;
+
+logger.log("INFO","Page Load Time:", loadTime + " ms");
+
+}
