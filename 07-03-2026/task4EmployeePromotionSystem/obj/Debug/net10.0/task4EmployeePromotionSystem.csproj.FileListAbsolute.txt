@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\bin\Debug\net10.0\task4EmployeePromotionSystem.exe
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\bin\Debug\net10.0\task4EmployeePromotionSystem.deps.json
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\bin\Debug\net10.0\task4EmployeePromotionSystem.runtimeconfig.json
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\bin\Debug\net10.0\task4EmployeePromotionSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\bin\Debug\net10.0\task4EmployeePromotionSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.sourcelink.json
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\refint\task4EmployeePromotionSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\task4EmployeePromotionSystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\07-03-2026\task4EmployeePromotionSystem\obj\Debug\net10.0\ref\task4EmployeePromotionSystem.dll

@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\bin\Debug\net10.0\task3ProductInventorySystem.exe
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\bin\Debug\net10.0\task3ProductInventorySystem.deps.json
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\bin\Debug\net10.0\task3ProductInventorySystem.runtimeconfig.json
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\bin\Debug\net10.0\task3ProductInventorySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\bin\Debug\net10.0\task3ProductInventorySystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.sourcelink.json
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\refint\task3ProductInventorySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\task3ProductInventorySystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\07-03-2026\task3ProductInventorySystem\obj\Debug\net10.0\ref\task3ProductInventorySystem.dll

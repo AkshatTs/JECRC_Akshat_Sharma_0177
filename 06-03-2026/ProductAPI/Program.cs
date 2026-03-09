@@ -14,7 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -31,6 +31,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseCors(x => x.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader());
 app.MapControllers();
 
 // var summaries = new[]

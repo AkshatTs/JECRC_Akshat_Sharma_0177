@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\bin\Debug\net10.0\task5EmployeeSalarySystem.exe
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\bin\Debug\net10.0\task5EmployeeSalarySystem.deps.json
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\bin\Debug\net10.0\task5EmployeeSalarySystem.runtimeconfig.json
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\bin\Debug\net10.0\task5EmployeeSalarySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\bin\Debug\net10.0\task5EmployeeSalarySystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.sourcelink.json
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\refint\task5EmployeeSalarySystem.dll
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\task5EmployeeSalarySystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\07-03-2026\task5EmployeeSalarySystem\obj\Debug\net10.0\ref\task5EmployeeSalarySystem.dll

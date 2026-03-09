@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\bin\Debug\net10.0\task1StudentEVSystem.exe
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\bin\Debug\net10.0\task1StudentEVSystem.deps.json
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\bin\Debug\net10.0\task1StudentEVSystem.runtimeconfig.json
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\bin\Debug\net10.0\task1StudentEVSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\bin\Debug\net10.0\task1StudentEVSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.sourcelink.json
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\refint\task1StudentEVSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\task1StudentEVSystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\07-03-2026\task1StudentEVSystem\obj\Debug\net10.0\ref\task1StudentEVSystem.dll

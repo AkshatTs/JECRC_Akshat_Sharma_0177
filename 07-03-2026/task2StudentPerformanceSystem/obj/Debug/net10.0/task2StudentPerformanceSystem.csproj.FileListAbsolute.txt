@@ -1,0 +1,15 @@
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\bin\Debug\net10.0\task2StudentPerformanceSystem.exe
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\bin\Debug\net10.0\task2StudentPerformanceSystem.deps.json
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\bin\Debug\net10.0\task2StudentPerformanceSystem.runtimeconfig.json
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\bin\Debug\net10.0\task2StudentPerformanceSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\bin\Debug\net10.0\task2StudentPerformanceSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.AssemblyInfo.cs
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.sourcelink.json
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\refint\task2StudentPerformanceSystem.dll
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.pdb
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\task2StudentPerformanceSystem.genruntimeconfig.cache
+D:\CapGemini\DateWise\07-03-2026\task2StudentPerformanceSystem\obj\Debug\net10.0\ref\task2StudentPerformanceSystem.dll
