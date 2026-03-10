@@ -1,0 +1,9 @@
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.csproj.AssemblyReference.cache
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.AssemblyInfoInputs.cache
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.AssemblyInfo.cs
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.csproj.CoreCompileInputs.cache
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\CapGemini\DateWise\10-03-2026\JwtRoleAuthAPI\obj\Debug\net10.0\JwtRoleAuthAPI.sourcelink.json

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.header{
+    text-align:center;
+    padding:20px;
+    font-size:24px;
+    font-weight:bold;
+    color:#333;
+}
+
+.dashboard{
+    width:320px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:10px;
+    color:#555;
+}
+
+</style>
+
+</head>
+
+<body onload="loadDashboard()">
+<h2 style="text-align:center;margin-top:30px;">
+Employee Leave Management System
+</h2>
+<!-- <div class="header">
+Employee Leave Management System
+</div> -->
+
+<div class="dashboard">
+
+<!-- Employee Section -->
+<div id="employeeSection" style="display:none">
+
+<div class="section-title">Employee Panel</div>
+
+<button onclick="window.location='apply-leave.html'">
+Apply Leave
+</button>
+
+<button onclick="window.location='leave-list.html'">
+My Leave Requests
+</button>
+
+</div>
+
+
+<!-- Manager Section -->
+<div id="managerSection" style="display:none">
+
+<div class="section-title">Manager Panel</div>
+
+<button onclick="window.location='manager-leaves.html'">
+View Leave Requests
+</button>
+
+</div>
+
+
+<!-- Admin Section -->
+<div id="adminSection" style="display:none">
+
+<div class="section-title">Admin Panel</div>
+
+<button onclick="window.location='employees.html'">
+Manage Employees
+</button>
+
+</div>
+
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
