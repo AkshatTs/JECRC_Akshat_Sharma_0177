@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Order Filtering</title>
+<style>
+body{
+    font-family:Arial;
+    margin:40px;
+}
+button{
+    padding:6px 12px;
+    margin-top:10px;
+}
+#output{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<h2>Online Order Filtering</h2>
+
+<p><b>All Orders:</b> <span id="original"></span></p>
+
+<button onclick="filterOrders()">Show Orders Above 1000</button>
+
+<div id="output"></div>
+
+<script>
+
+const orders = [450,1200,700,3000,1500];
+document.getElementById("original").innerText = orders;
+
+function filterOrders(){
+
+const filtered = orders.filter(order => order > 1000);
+
+console.log("Original Orders:", orders);
+console.log("Filtered Orders:", filtered);
+
+document.getElementById("output").innerText =
+"Orders above 1000: " + filtered;
+
+}
+
+</script>
+
+</body>
+</html>
