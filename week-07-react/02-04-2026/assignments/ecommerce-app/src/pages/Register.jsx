@@ -29,14 +29,20 @@ function Register() {
   };
 
   return (
-    <div>
-      <h2 className="auth-title">Register</h2>
+    <div className="auth-card">
+      <div className="auth-hero auth-hero-secondary">
+        <div>
+          <span>Create account</span>
+          <h2 className="auth-title">Register</h2>
+        </div>
+        <p>Sign up to start exploring products, track orders, and manage your profile.</p>
+      </div>
 
       <form onSubmit={handleSubmit} className="auth-form">
         <input
           type="text"
           name="name"
-          placeholder="Enter Name"
+          placeholder="Full name"
           value={form.name}
           onChange={handleChange}
         />
@@ -44,7 +50,7 @@ function Register() {
         <input
           type="email"
           name="email"
-          placeholder="Enter Email"
+          placeholder="Email address"
           value={form.email}
           onChange={handleChange}
         />
@@ -52,13 +58,17 @@ function Register() {
         <input
           type="password"
           name="password"
-          placeholder="Enter Password"
+          placeholder="Choose a password"
           value={form.password}
           onChange={handleChange}
         />
 
-        <button type="submit">Register</button>
+        <button type="submit" className="auth-submit">Register</button>
       </form>
+
+      <div className="auth-actions">
+        <Link to="/" className="auth-return">Return to Home</Link>
+      </div>
 
       <p className="auth-switch">
         Already have an account? <Link to="/login">Login</Link>

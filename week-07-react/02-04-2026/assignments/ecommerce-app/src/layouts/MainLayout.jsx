@@ -5,7 +5,7 @@ function MainLayout() {
     <div className="app-shell">
       <header className="main-header">
         <div className="brand">
-          <h2>E-Shop</h2>
+          <h2>Shop</h2>
           <span>Modern shopping experience</span>
         </div>
 
@@ -22,8 +22,8 @@ function MainLayout() {
 
       <div className="main-area">
         <section className="page-top">
-          <h1>Enterprise E-Commerce Application</h1>
-          <p>Browse products, learn about our brand, and manage your shopping securely.</p>
+          <h1>E-Commerce App</h1>
+          <p>Browse products, brand, and manage your shopping experiance.</p>
         </section>
 
         <main className="content">

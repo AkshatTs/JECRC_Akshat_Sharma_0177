@@ -28,14 +28,20 @@ function Login() {
   };
 
   return (
-    <div>
-      <h2 className="auth-title">Login</h2>
+    <div className="auth-card">
+      {/* <div className="auth-hero">
+        <div>
+          <span>Welcome Back</span>
+          <h2 className="auth-title">Login</h2>
+        </div>
+        <p>Access your account securely and continue shopping with ease.</p>
+      </div> */}
 
       <form onSubmit={handleSubmit} className="auth-form">
         <input
           type="email"
           name="email"
-          placeholder="Enter Email"
+          placeholder="Email address"
           value={form.email}
           onChange={handleChange}
         />
@@ -43,16 +49,20 @@ function Login() {
         <input
           type="password"
           name="password"
-          placeholder="Enter Password"
+          placeholder="Password"
           value={form.password}
           onChange={handleChange}
         />
 
-        <button type="submit">Login</button>
+        <button type="submit" className="auth-submit">Login</button>
       </form>
 
+      <div className="auth-actions">
+        <Link to="/" className="auth-return">Return to Home</Link>
+      </div>
+
       <p className="auth-switch">
-        Don’t have an account? <Link to="/register">Register</Link>
+        Don’t have an account? <Link to="/register">Create one</Link>
       </p>
     </div>
   );
