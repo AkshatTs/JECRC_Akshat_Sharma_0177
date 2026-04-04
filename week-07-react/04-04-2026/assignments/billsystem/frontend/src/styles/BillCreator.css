@@ -1,0 +1,225 @@
+.bill-creator {
+  max-width: 1600px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bill-creator h1 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.bill-creator > p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.bill-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.invoice-section {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.invoice-section:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.invoice-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.invoice-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.invoice-date {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Bill Actions */
+.bill-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn-save, .btn-draft, .btn-print, .btn-pdf, .btn-csv, .btn-reset {
+  padding: 0.875rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  grid-column: 1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.btn-save:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn-draft {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+  color: white;
+  grid-column: 2;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+.btn-draft:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+}
+
+.btn-print {
+  background: linear-gradient(135deg, var(--info) 0%, #0284c7 100%);
+  color: white;
+  grid-column: 1;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+}
+
+.btn-print:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+}
+
+.btn-pdf {
+  background: linear-gradient(135deg, var(--warning) 0%, #d97706 100%);
+  color: white;
+  grid-column: 2;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+}
+
+.btn-pdf:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-csv {
+  background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+  color: white;
+  grid-column: 1;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.btn-csv:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, var(--text-secondary) 0%, var(--text-tertiary) 100%);
+  color: white;
+  grid-column: 2;
+  box-shadow: 0 4px 12px rgba(71, 85, 105, 0.2);
+}
+
+.btn-reset:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(71, 85, 105, 0.3);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .bill-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .right-section {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .bill-creator h1 {
+    font-size: 1.75rem;
+  }
+
+  .bill-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bill-actions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn-save, .btn-draft, .btn-print, .btn-pdf, .btn-csv, .btn-reset {
+    grid-column: auto;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .invoice-section {
+    padding: 1.5rem;
+  }
+
+  .right-section {
+    position: relative;
+  }
+}
