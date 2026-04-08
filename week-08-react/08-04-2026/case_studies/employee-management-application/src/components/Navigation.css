@@ -1,0 +1,92 @@
+/* Navigation Styles */
+.navbar {
+  padding: 16px 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar.light {
+  background-color: white;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border-bottom: 1px solid #374151;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-badge {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #1e40af;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.navbar.dark .user-badge {
+  background-color: rgba(59, 130, 246, 0.25);
+  color: #93c5fd;
+}
+
+.user-department {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .user-badge {
+    width: 100%;
+    text-align: center;
+  }
+}
