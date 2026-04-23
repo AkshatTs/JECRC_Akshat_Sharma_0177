@@ -1,0 +1,33 @@
+<div class="weather-container">
+  <h2>Weather Search</h2>
+  
+  <input
+    type="text"
+    data-test-id="app-input"
+    (input)="onSearch($event.target)"
+    placeholder="Search for a city..."
+    class="city-input"
+  />
+
+  <div *ngIf="searchCity" class="results-container">
+    
+    <div *ngIf="filteredWeather; else noResults" data-test-id="weather-details" class="weather-details">
+      <div data-test-id="output-temperature" class="temp-display">
+        {{ filteredWeather.temperature }}
+      </div>
+      <div data-test-id="output-wind" class="detail-row">
+        Wind: {{ filteredWeather.wind }}
+      </div>
+      <div data-test-id="output-humidity" class="detail-row">
+        Humidity: {{ filteredWeather.humidity }}
+      </div>
+    </div>
+
+    <ng-template #noResults>
+      <div data-test-id="no-results" class="no-results">
+        No Results Found
+      </div>
+    </ng-template>
+
+  </div>
+</div>
