@@ -1,9 +1,0 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace EmployeePortal_BE.models.attributes
-{
-    public class CheckPasswordAttribute : ValidationAttribute
-    {
-
-    }
-}
