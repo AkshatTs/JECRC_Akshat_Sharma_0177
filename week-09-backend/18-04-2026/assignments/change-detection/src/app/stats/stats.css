@@ -1,0 +1,32 @@
+.stats-card {
+  background: white;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.stats-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.stats-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.strategy-badge.default {
+  background-color: #eaeded;
+  color: #7f8c8d;
+  border: 1px solid #d5dbdb;
+}
+
+.stats-score {
+  margin-bottom: 0;
+  border-left-color: #27ae60;
+}
+
+.stats-score span {
+  color: #27ae60;
+}

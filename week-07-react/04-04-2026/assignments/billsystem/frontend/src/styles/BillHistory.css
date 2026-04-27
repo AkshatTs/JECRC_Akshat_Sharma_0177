@@ -1,0 +1,377 @@
+.bill-history {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bill-history h1 {
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.daily-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  background: #ffffff;
+  border-top: 3px solid #6366f1;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.summary-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card .label {
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+.summary-card .value {
+  color: #6366f1;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.filter-section {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.search-input, .date-input {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus, .date-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.08);
+}
+
+.btn-export {
+  padding: 0.6rem 1rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.btn-export:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+.bills-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.5rem;
+}
+
+.bills-list {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.bills-list:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bills-list h2 {
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.bill-item {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-top: 3px solid #6366f1;
+  padding: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.bill-item:hover {
+  border-color: #6366f1;
+  background: #f0f3ff;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
+}
+
+.bill-item.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+.bill-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.bill-item h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.bill-amount {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.bill-date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 0.3rem;
+}
+
+.bill-items {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.bill-item.active .bill-date,
+.bill-item.active .bill-items {
+  color: white;
+}
+
+.no-bills {
+  text-align: center;
+  color: #6b7280;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.bill-detail {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  height: fit-content;
+  transition: all 0.2s ease;
+}
+
+.bill-detail:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bill-detail h2 {
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-header {
+  background: #6366f1;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.detail-header h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+}
+
+.detail-header .date {
+  font-size: 0.8rem;
+  opacity: 0.95;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.detail-table thead {
+  background: #f8fafc;
+  color: #6366f1;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.detail-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.detail-table td {
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.detail-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.detail-totals {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 4px;
+  border-top: 3px solid #6366f1;
+  border: 1px solid #e5e7eb;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.total-row.final {
+  background: #6366f1;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border-bottom: none;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-print, .btn-delete {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.btn-print {
+  background: #0ea5e9;
+  color: white;
+}
+
+.btn-print:hover {
+  background: #0284c7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2);
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .bills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bill-history h1 {
+    font-size: 1.3rem;
+  }
+
+  .bills-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .filter-section {
+    flex-direction: column;
+  }
+
+  .search-input, .date-input, .btn-export {
+    width: 100%;
+  }
+
+  .detail-table {
+    font-size: 0.75rem;
+  }
+
+  .detail-table th, .detail-table td {
+    padding: 0.5rem;
+  }
+}

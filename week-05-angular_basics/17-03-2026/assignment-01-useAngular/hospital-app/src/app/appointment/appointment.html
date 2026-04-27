@@ -1,0 +1,48 @@
+<div class="container">
+
+  <h2>Doctor Appointment Booking</h2>
+
+  <form (ngSubmit)="submitForm()">
+
+    <label>Patient Name</label>
+    <input type="text" [(ngModel)]="patientName" name="patientName" required>
+
+    <label>Select Doctor</label>
+    <select [(ngModel)]="doctor" name="doctor">
+      <option value="">-- Select Doctor --</option>
+      <option *ngFor="let d of doctors" [value]="d">{{d}}</option>
+    </select>
+
+    <label>Appointment Date</label>
+    <input type="date" [(ngModel)]="date" name="date" [min]="today">
+
+    <label>Consultation Type</label>
+    <div>
+      <input type="radio" value="Online" [(ngModel)]="consultationType" name="type" (change)="updateFee()"> Online
+      <input type="radio" value="Offline" [(ngModel)]="consultationType" name="type" (change)="updateFee()"> Offline
+    </div>
+
+    <label>Symptoms</label>
+    <textarea [(ngModel)]="symptoms" name="symptoms"></textarea>
+
+    <button type="submit">Book Appointment</button>
+
+  </form>
+
+  <!-- Summary -->
+  <div *ngIf="patientName || doctor || date">
+    <h3>Summary</h3>
+    <p>Name: {{patientName}}</p>
+    <p>Doctor: {{doctor}}</p>
+    <p>Date: {{date}}</p>
+    <p>Type: {{consultationType}}</p>
+    <p>Fee: ₹{{fee}}</p>
+    <p>Symptoms: {{symptoms}}</p>
+  </div>
+
+  <!-- Success -->
+  <div *ngIf="submitted" style="color:green;">
+    Appointment Booked Successfully!
+  </div>
+
+</div>

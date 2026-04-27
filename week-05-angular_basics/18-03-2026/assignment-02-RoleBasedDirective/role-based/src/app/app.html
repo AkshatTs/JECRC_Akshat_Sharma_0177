@@ -1,0 +1,17 @@
+<h2>Role Based Dashboard</h2>
+
+<div class="container">
+
+  <div *appRole="'admin'" class="card admin">
+    <h3>Admin Panel</h3>
+    <p>Manage users, delete data, full access</p>
+    <button>Delete User</button>
+  </div>
+
+  <div *appRole="'user'" class="card user">
+    <h3>User Panel</h3>
+    <p>View profile and basic access</p>
+    <button>View Profile</button>
+  </div>
+
+</div>

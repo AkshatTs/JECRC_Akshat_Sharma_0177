@@ -1,0 +1,11 @@
+<h2>Student Status</h2>
+
+<div *ngFor="let student of students" class="card">
+
+  <h3>{{ student.name }}</h3>
+
+  <p [appStatusColor]="student.marks">
+    Marks: {{ student.marks }}
+  </p>
+
+</div>

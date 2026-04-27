@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<div>Student Dashboard</div>
+<button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+<h2>Search Courses</h2>
+
+<input id="search" placeholder="Search course">
+<button onclick="searchCourses()">Search</button>
+
+<br><br>
+
+<button onclick="loadCourses()">All Courses</button>
+<button onclick="myCourses()">My Courses</button>
+
+<div id="courses"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

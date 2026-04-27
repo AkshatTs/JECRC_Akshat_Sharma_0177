@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promise Calculator with Modules</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    width:400px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-radius:6px;
+    background:#007bff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.state{
+    margin-top:15px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.pending{
+    color:orange;
+}
+
+.fulfilled{
+    color:green;
+}
+
+.rejected{
+    color:red;
+}
+
+.results{
+    margin-top:15px;
+    padding:10px;
+    background:#f1f1f1;
+    border-radius:6px;
+}
+
+.result-item{
+    margin:5px 0;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Promise Calculator</h1>
+
+<input type="text" id="num1" placeholder="Enter first number">
+<input type="text" id="num2" placeholder="Enter second number">
+
+<button onclick="calculate()">Calculate</button>
+
+<div id="state" class="state">State: Waiting</div>
+
+<div class="results">
+<div id="addResult" class="result-item"></div>
+<div id="subtractResult" class="result-item"></div>
+<div id="multiplyResult" class="result-item"></div>
+<div id="divideResult" class="result-item"></div>
+</div>
+
+</div>
+
+<script type="module">
+
+// ----- math.js (module) -----
+
+const Utils = `
+export const PI = 3.14159;
+
+export function add(a,b){
+    return a+b;
+}
+
+export function subtract(a,b){
+    return a-b;
+}
+
+export function multiply(a,b){
+    return a*b;
+}
+
+export function divide(a,b){
+    if(b===0){
+        throw new Error("Cannot divide by zero");
+    }
+    return a/b;
+}
+`;
+
+// create module dynamically
+const blob = new Blob([Utils],{type:'text/javascript'});
+const url = URL.createObjectURL(blob);
+
+// import module
+import(url).then(module=>{
+
+window.calculate=function(){
+
+const state=document.getElementById("state");
+
+// promise example
+const calculationPromise=new Promise((resolve,reject)=>{
+
+state.innerText="State: Pending...";
+state.className="state pending";
+
+setTimeout(()=>{
+
+try{
+
+const val1=document.getElementById("num1").value;
+const val2=document.getElementById("num2").value;
+
+if(val1===""||val2===""){
+reject("Fields cannot be empty");
+return;
+}
+
+const a=Number(val1);
+const b=Number(val2);
+
+if(isNaN(a)||isNaN(b)){
+reject("Invalid numbers");
+return;
+}
+
+resolve({
+add:module.add(a,b),
+subtract:module.subtract(a,b),
+multiply:module.multiply(a,b),
+divide:module.divide(a,b)
+});
+
+}
+catch(error){
+reject(error.message);
+}
+
+},2000);
+
+});
+
+// fulfilled
+calculationPromise.then(result=>{
+
+state.innerText="State: Fulfilled";
+state.className="state fulfilled";
+
+document.getElementById("addResult").innerText="Add: "+result.add;
+document.getElementById("subtractResult").innerText="Subtract: "+result.subtract;
+document.getElementById("multiplyResult").innerText="Multiply: "+result.multiply;
+document.getElementById("divideResult").innerText="Divide: "+result.divide;
+
+})
+
+// rejected
+.catch(error=>{
+
+state.innerText="State: Rejected";
+state.className="state rejected";
+
+document.getElementById("addResult").innerText="";
+document.getElementById("subtractResult").innerText="";
+document.getElementById("multiplyResult").innerText="";
+document.getElementById("divideResult").innerText="";
+
+alert(error);
+
+});
+
+};
+
+})
+.catch(error=>{
+console.error("Error loading module:",error);
+});
+
+</script>
+
+</body>
+</html>

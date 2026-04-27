@@ -1,0 +1,62 @@
+<div class="container">
+  <h1>Angular Banking Application</h1>
+
+  <div class="form-section">
+    <h2>Add Transaction</h2>
+
+    <input type="date" [(ngModel)]="transaction.date" />
+
+    <input
+      type="text"
+      placeholder="Description"
+      [(ngModel)]="transaction.description"
+    />
+
+    <select [(ngModel)]="transaction.type">
+      <option [value]="0">Credit</option>
+      <option [value]="1">Debit</option>
+    </select>
+
+    <input
+      type="number"
+      placeholder="Amount"
+      [(ngModel)]="transaction.amount"
+    />
+
+    <input
+      type="text"
+      placeholder="Balance (example: $1200.00)"
+      [(ngModel)]="transaction.balance"
+    />
+
+    <button (click)="addTransaction()">Add Transaction</button>
+  </div>
+
+  <div class="filter-section">
+    <input type="date" [(ngModel)]="selectedDate" />
+    <button (click)="filterTransactions()">Filter</button>
+    <button (click)="showAll()">Show All</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th class="sortable" (click)="sortTransactions()">Amount ($)</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.description }}</td>
+        <td>{{ getTypeText(transaction.type) }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>{{ transaction.balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

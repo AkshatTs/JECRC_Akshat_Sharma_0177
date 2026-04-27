@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pass Students Only</title>
+<style>
+body{
+    font-family:Arial;
+    margin:40px;
+}
+button{
+    padding:6px 12px;
+    margin-top:10px;
+}
+#output{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<h2>Pass Students Only</h2>
+
+<p><b>All Marks:</b> <span id="original"></span></p>
+
+<button onclick="showPassing()">Show Passing Students</button>
+
+<div id="output"></div>
+
+<script>
+
+const marks = [35,67,48,90,55,30];
+document.getElementById("original").innerText = marks;
+
+function showPassing(){
+
+const passing = marks.filter(mark => mark > 50);
+
+console.log("All Marks:", marks);
+console.log("Passing Students:", passing);
+
+document.getElementById("output").innerText =
+"Passing Students: " + passing;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<div>Admin Dashboard</div>
+<button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+<h2>Add Course</h2>
+
+<input id="courseName" placeholder="Course Name">
+<input id="deptId" placeholder="Department ID">
+<input id="credits" placeholder="Credits">
+<input id="seats" placeholder="Seats">
+
+<button onclick="addCourse()">Add Course</button>
+
+<br><br>
+
+<button onclick="loadCourses()">View Courses</button>
+<button onclick="viewEnrollments()">View Enrollments</button>
+
+<div id="courses"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

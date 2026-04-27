@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Commerce Price Update</title>
+<style>
+body{
+    font-family:Arial;
+    margin:40px;
+}
+button{
+    padding:6px 12px;
+    margin-top:10px;
+}
+#output{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<h2>E-Commerce Price Update</h2>
+
+<p><b>Original Prices:</b> <span id="original"></span></p>
+
+<button onclick="applyDiscount()">Apply 10% Discount</button>
+
+<div id="output"></div>
+
+<script>
+
+const prices = [1200,800,1500,2000];
+document.getElementById("original").innerText = prices;
+
+function applyDiscount(){
+
+const discounted = prices.map(price => price * 0.9);
+
+console.log("Original Prices:", prices);
+console.log("Discounted Prices:", discounted);
+
+document.getElementById("output").innerText =
+"Discounted Prices: " + discounted;
+
+}
+
+</script>
+
+</body>
+</html>
+
