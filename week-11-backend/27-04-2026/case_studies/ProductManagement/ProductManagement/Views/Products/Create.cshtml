@@ -1,0 +1,74 @@
+@model ProductManagement.DTOs.ProductRequestDto
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h1>Create New Product</h1>
+        <hr />
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                <h5>Please fix the following errors:</h5>
+                <ul>
+                    @foreach (var modelState in ViewData.ModelState.Values)
+                    {
+                        @foreach (var error in modelState.Errors)
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    }
+                </ul>
+            </div>
+        }
+
+        <form asp-action="Create" method="post" class="needs-validation">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="form-label">Product Name <span class="text-danger">*</span></label>
+                <input asp-for="Name" class="form-control @(ViewData.ModelState.ContainsKey("Name") && !ViewData.ModelState["Name"].ValidationState.ToString().Equals("Valid") ? "is-invalid" : "")" placeholder="Enter product name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Price" class="form-label">Price <span class="text-danger">*</span></label>
+                <input asp-for="Price" type="number" step="0.01" min="0" class="form-control @(ViewData.ModelState.ContainsKey("Price") && !ViewData.ModelState["Price"].ValidationState.ToString().Equals("Valid") ? "is-invalid" : "")" placeholder="0.00" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="CategoryId" class="form-label">Category <span class="text-danger">*</span></label>
+                <select asp-for="CategoryId" class="form-control @(ViewData.ModelState.ContainsKey("CategoryId") && !ViewData.ModelState["CategoryId"].ValidationState.ToString().Equals("Valid") ? "is-invalid" : "")">
+                    <option value="0">-- Select Category --</option>
+                    <option value="1">Electronics</option>
+                    <option value="2">Clothing</option>
+                    <option value="3">Books</option>
+                    <option value="4">Home & Garden</option>
+                    <option value="5">Sports</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter product description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create Product</button>
+                <a asp-action="GetAll" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
