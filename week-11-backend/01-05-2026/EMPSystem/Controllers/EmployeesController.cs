@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using EMPSystem.Data;
 using EMPSystem.Models;
 
-namespace EMPSystem.Contollers
+namespace EMPSystem.Controllers
 {
     public class EmployeesController : Controller
     {
