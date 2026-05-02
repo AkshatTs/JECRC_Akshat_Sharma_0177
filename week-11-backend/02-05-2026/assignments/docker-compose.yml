@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # 1. The Database Layer
+  mssql-day2:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql-day2
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SuperSecretPass123!
+    ports:
+      - "1434:1433"
+
+  # 2. The API Layer
+  ems-api-day2:
+    image: ems-api-img-day2  
+    container_name: ems-api-day2
+    ports:
+      - "8087:8080"
+    depends_on:
+      - mssql-day2
+
+  # 3. The Web/UI Layer
+  ems-mvc-day2:
+    image: ems-mvc-img-day2
+    container_name: ems-mvc-day2
+    environment:                           
+      - ASPNETCORE_ENVIRONMENT=Development 
+    ports:
+      - "8088:8080"
+    depends_on:
+      - ems-api-day2
+
+# This tells Docker to put them all on the same Wi-Fi router automatically!
+networks:
+  default:
+    name: ems-network-day2
