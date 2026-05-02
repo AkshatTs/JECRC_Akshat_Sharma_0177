@@ -1,17 +1,14 @@
-using EMPSystem.Data;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        sqlServerOptionsAction: sqlOptions =>
-        {
-            sqlOptions.EnableRetryOnFailure();
-        }));
+
+// This creates the bridge to your API container!
+builder.Services.AddHttpClient("EmsApi", client =>
+{
+    // Notice we use the exact container name and internal port (8080) of the API
+    client.BaseAddress = new Uri("http://ems-api-day2:8080/");
+});
 
 var app = builder.Build();
 

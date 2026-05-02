@@ -1,0 +1,17 @@
+﻿@model EmsMvcDay2.Models.Employee
+
+<h2 style="color: red;">Are you sure you want to delete this?</h2>
+
+<div style="border: 1px solid black; padding: 15px; max-width: 300px;">
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Department:</strong> @Model.Department</p>
+    
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" style="padding: 5px 15px; background-color: red; color: white;">Yes, Delete</button>
+    </form>
+</div>
+
+<br />
+<a href="/Employee">Back to List</a>

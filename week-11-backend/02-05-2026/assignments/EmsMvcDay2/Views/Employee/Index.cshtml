@@ -1,0 +1,28 @@
+﻿@model IEnumerable<EmsMvcDay2.Models.Employee>
+
+<h2>Employee List (Fetched from API via Docker Network)</h2>
+<div style="margin-bottom: 15px;">
+    <a href="/Employee/Create" style="padding: 5px 10px; background-color: lightgreen; text-decoration: none; border: 1px solid black;">+ Create New</a>
+</div>
+
+<table style="width: 100%; border: 1px solid black; text-align: left;">
+    <tr style="background-color: lightgray;">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Actions</th> <!-- New Column -->
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.Id</td>
+            <td>@emp.Name</td>
+            <td>@emp.Department</td>
+            <td>
+                <!-- New Action Links -->
+                <a href="/Employee/Edit/@emp.Id" style="color: blue;">Edit</a> |
+                <a href="/Employee/Delete/@emp.Id" style="color: red;">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

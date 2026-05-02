@@ -1,0 +1,18 @@
+﻿@model EmsMvcDay2.Models.Employee
+
+<h2>Add New Employee</h2>
+
+<form asp-action="Create" method="post" style="max-width: 300px; border: 1px solid black; padding: 15px;">
+    <div style="margin-bottom: 10px;">
+        <label>Name:</label><br />
+        <input asp-for="Name" style="width: 100%;" required />
+    </div>
+    <div style="margin-bottom: 10px;">
+        <label>Department:</label><br />
+        <input asp-for="Department" style="width: 100%;" required />
+    </div>
+    <button type="submit" style="padding: 5px 15px; background-color: lightblue;">Save Employee</button>
+</form>
+
+<br />
+<a href="/Employee">Back to List</a>
