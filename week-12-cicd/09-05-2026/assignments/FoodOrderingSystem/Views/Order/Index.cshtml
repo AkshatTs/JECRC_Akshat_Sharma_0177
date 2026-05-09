@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FoodOrderingSystem.Models.OrderHeader>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Order Management</h2>
+        </div>
+    </div>
+    <br />
+
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>Order ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Status</th>
+                <th>Total</th>
+                <th>Order Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@obj.Id</td>
+                    <td>@obj.Name</td>
+                    <td>@obj.PhoneNumber</td>
+                    <td>
+                        <!-- Add colored badges based on status -->
+                        @if (obj.OrderStatus == "Pending")
+                        {
+                            <span class="badge bg-warning text-dark">@obj.OrderStatus</span>
+                        }
+                        else if (obj.OrderStatus == "In Process")
+                        {
+
+                            <span class="badge bg-info text-dark">@obj.OrderStatus</span>
+                        }
+                        else if (obj.OrderStatus == "Completed")
+                        {
+
+                            <span class="badge bg-success">@obj.OrderStatus</span>
+                        }
+                        else
+                        {
+
+                            <span class="badge bg-danger">@obj.OrderStatus</span>
+                        }
+                    </td>
+                    <td>$@obj.OrderTotal.ToString("0.00")</td>
+                    <td>@obj.OrderDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-controller="Order" asp-action="Details" asp-route-orderId="@obj.Id" class="btn btn-secondary btn-sm">
+                            <i class="bi bi-pencil-square"></i> Details
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,139 @@
+﻿@model FoodOrderingSystem.Models.ViewModels.OrderVM
+
+<form method="post">
+    <!-- Hidden input to pass the order ID to the controller -->
+    <input asp-for="OrderHeader.Id" hidden name="orderId" />
+    <br />
+    <div class="container">
+        <div class="card shadow border-0">
+            <div class="card-header bg-dark text-light ml-0 py-4">
+                <div class="row px-4">
+                    <div class="col-6">
+                        <h3 class="pt-2 text-white">Order Details</h3>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a asp-action="Index" class="btn btn-outline-light btn-sm text-uppercase">Back to Orders</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <!-- Customer Info Section -->
+                        <div class="col-12 col-lg-6 pb-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Delivery Details:</span>
+                            </h4>
+                            <div class="row my-1">
+                                <div class="col-3">Name</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.Name" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Phone</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.PhoneNumber" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Address</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.StreetAddress" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">City</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.City" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">State</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.State" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Zip Code</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.PostalCode" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Email</div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.ApplicationUser.Email" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Order Date</div>
+                                <div class="col-9">
+                                    <input value="@Model.OrderHeader.OrderDate.ToShortDateString()" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1 mt-4">
+                                <div class="col-3"><strong>Status</strong></div>
+                                <div class="col-9">
+                                    <input asp-for="OrderHeader.OrderStatus" readonly class="form-control text-primary fw-bold" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Summary Section -->
+                        <div class="col-12 col-lg-5 offset-lg-1">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Order Summary</span>
+                            </h4>
+                            <label class="btn btn-outline-primary form-control my-2 border-0 bg-light text-start shadow-sm">
+                                Order Status: <strong>@Model.OrderHeader.OrderStatus</strong>
+                            </label>
+
+                            <ul class="list-group mb-3 z-depth-1">
+                                @foreach (var detail in Model.OrderDetail)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between p-2">
+                                        <div class="row container">
+                                            <div class="col-8">
+                                                <h6 class="my-0 text-primary">@detail.FoodItem.Name</h6>
+                                                <small class="text-muted">Price : $@detail.Price.ToString("0.00")</small><br />
+                                                <small class="text-muted">Quantity : @detail.Count</small>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <p class="text-success">$@((detail.Count * detail.Price).ToString("0.00"))</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                                <li class="list-group-item bg-dark">
+                                    <div class="row container">
+                                        <div class="col-6">
+                                            <h5 class="text-white">TOTAL </h5>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <h5 class="text-white">$@Model.OrderHeader.OrderTotal.ToString("0.00")</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Admin Action Buttons based on Status -->
+                            @if (Model.OrderHeader.OrderStatus == "Pending")
+                            {
+                                <button type="submit" asp-action="StartProcessing" class="btn btn-primary form-control my-1 text-uppercase fw-bold shadow">Start Processing</button>
+                            }
+                            @if (Model.OrderHeader.OrderStatus == "In Process")
+                            {
+                                <button type="submit" asp-action="CompleteOrder" class="btn btn-success form-control my-1 text-uppercase fw-bold shadow">Complete Order</button>
+                            }
+                            @if (Model.OrderHeader.OrderStatus != "Completed" && Model.OrderHeader.OrderStatus != "Cancelled")
+                            {
+                                <button type="submit" asp-action="CancelOrder" class="btn btn-danger form-control my-1 text-uppercase fw-bold shadow">Cancel Order</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

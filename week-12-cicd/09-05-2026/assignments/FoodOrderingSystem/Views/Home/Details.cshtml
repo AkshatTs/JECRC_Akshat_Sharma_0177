@@ -1,0 +1,66 @@
+﻿@model FoodOrderingSystem.Models.ShoppingCart
+
+<form method="post">
+    <!-- We hide the FoodItemId so the controller knows exactly what item to add -->
+    <input hidden asp-for="FoodItemId" />
+    
+    <div class="card shadow border-0 mt-4">
+        <div class="card-header bg-primary text-light py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white text-uppercase">@Model.FoodItem.Name</h3>
+                    <p class="text-white-50 fw-semibold mb-0">@Model.FoodItem.Category.Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="py-3">
+                <div class="row">
+                    <!-- Image Section -->
+                    <div class="col-12 col-lg-3 offset-lg-1 text-center mb-3">
+                        <img src="@Model.FoodItem.ImageUrl" width="100%" class="rounded shadow-sm" />
+                    </div>
+                    
+                    <!-- Details & Controls Section -->
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <div class="row ps-2">
+                            <h6 class="text-dark text-opacity-50">@Html.Raw(Model.FoodItem.Description)</h6>
+                        </div>
+                        <div class="row ps-2 mb-3 mt-3">
+                            <h4 class="text-success fw-bold">Price: $@Model.FoodItem.Price.ToString("0.00")</h4>
+                        </div>
+                        
+                        <!-- Quantity Input -->
+                        <div class="row pl-2 mb-3">
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text bg-primary text-white border-0 fw-semibold">Quantity</span>
+                                    <input asp-for="Count" type="number" value="1" class="form-control text-end" />
+                                </div>
+                                <span asp-validation-for="Count" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Buttons -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 pb-1">
+                                <button type="submit" class="btn btn-primary w-100 py-2 text-uppercase fw-semibold">
+                                    Add to Cart 
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-6 pb-1">
+                                <a asp-action="Index" class="btn btn-outline-secondary w-100 py-2 text-uppercase fw-semibold">
+                                    Back to Menu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

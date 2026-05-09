@@ -1,0 +1,26 @@
+﻿version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: food_db_production
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrongPassword123!
+    ports:
+      - "1434:1433"
+
+  web:
+    image: foodorderingsystem-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: food_web_production
+    restart: always 
+    ports:
+      - "8000:8080" 
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=FoodOrderingDb;User Id=sa;Password=YourStrongPassword123!;TrustServerCertificate=True
+      - ASPNETCORE_ENVIRONMENT=Development # <-- ADD THIS LINE
+    depends_on:
+      - db

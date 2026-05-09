@@ -1,0 +1,15 @@
+﻿@model int
+
+<div class="container row pt-4">
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">Order Placed Successfully!</h1>
+        <br />
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="10%" />
+        <br /><br />
+        Your Order Number is: <strong>@Model</strong>
+        <br /><br />
+        <p>We have received your order and our kitchen is preparing it now.</p>
+        <br />
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Return to Menu</a>
+    </div>
+</div>
