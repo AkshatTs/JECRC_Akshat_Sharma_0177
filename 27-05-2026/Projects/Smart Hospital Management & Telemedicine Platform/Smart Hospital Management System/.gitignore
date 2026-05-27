@@ -1,0 +1,64 @@
+# .gitignore for Smart Hospital Management & Telemedicine Platform
+
+# === .NET Build Artifacts ===
+bin/                    # Compiled binaries
+obj/                    # Intermediate object files
+.vs/                    # Visual Studio cache
+.vscode/                # VS Code settings
+*.suo                   # Visual Studio solution user options
+*.user                  # Project user settings
+*.csproj.user           # C# project user settings
+.ReSharper*/            # ReSharper IDE cache
+_ReSharper*/            # ReSharper cache
+
+# === Node.js / npm (Frontend - web/) ===
+node_modules/           # npm dependencies - DO NOT COMMIT
+package-lock.json       # npm dependency lock file
+yarn.lock               # yarn dependency lock file
+pnpm-lock.yaml          # pnpm dependency lock file
+npm-debug.log*          # npm debug logs
+yarn-error.log*         # yarn error logs
+
+# === Frontend Build ===
+dist/                   # Build output
+build/                  # Build directory
+.next/                  # Next.js cache
+out/                    # Next.js static export
+coverage/               # Test coverage
+.cache/                 # Webpack/Babel cache
+
+# === Environment & Secrets ===
+.env                    # Local environment variables (SECURITY RISK!)
+.env.local              # Local-only env vars
+.env.*.local            # Environment-specific local vars
+appsettings.*.json      # ASP.NET environment settings with secrets
+secrets.json            # .NET UserSecrets file
+web/.env                # Frontend environment file
+
+# === Logs & Debugging ===
+*.log                   # Log files
+logs/                   # Log directory
+npm-debug.log           # npm debug log
+debug.log               # Debug logs
+backend.err.log         # Backend error logs (checked in - remove if not needed)
+backend.out.log         # Backend output logs (checked in - remove if not needed)
+
+# === IDEs & Editors ===
+.idea/                  # JetBrains IDE (Rider, IntelliJ, etc)
+.fleet/                 # JetBrains Fleet
+*.swp                   # vim swap files
+*.swo                   # vim other swap files
+*~                      # Backup files
+.DS_Store               # macOS folder attributes
+
+# === Docker ===
+docker-compose.override.yml  # Local docker overrides
+
+# === Infrastructure ===
+# infra/ contains IaC files - review before committing secrets
+
+# === Temporary & OS Files ===
+Thumbs.db               # Windows thumbnail cache
+ehthumbs.db             # Windows folder cache
+*.tmp                   # Temporary files
+*.bak                   # Backup files

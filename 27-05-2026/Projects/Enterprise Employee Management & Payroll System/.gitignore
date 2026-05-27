@@ -1,0 +1,57 @@
+# .gitignore for Enterprise Employee Management & Payroll System
+# Applies to both backend and frontend in this project
+
+# Backend (.NET/API)
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/.vscode/
+backend/appsettings.Development.json
+backend/appsettings.Production.json
+backend/**/*.user
+backend/**/*.suo
+
+# Backend (Node.js if used)
+backend/node_modules/
+backend/package-lock.json
+backend/yarn.lock
+backend/dist/
+backend/build/
+
+# Frontend (React/Angular/Vue)
+frontend/node_modules/
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+
+# Database
+database/**/*.db
+database/**/*.sqlite*
+database/**/*.mdf
+database/**/*.ldf
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+appsettings.*.json
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+*.tmp
+*.bak
+ehthumbs.db

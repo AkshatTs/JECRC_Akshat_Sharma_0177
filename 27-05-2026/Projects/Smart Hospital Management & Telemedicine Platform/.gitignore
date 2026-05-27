@@ -1,0 +1,51 @@
+# .gitignore for Smart Hospital Management & Telemedicine Platform (Parent)
+# This applies to all subdirectories including the Smart Hospital Management System
+
+# === .NET Build Artifacts ===
+bin/
+obj/
+.vs/
+.vscode/
+*.suo
+*.user
+*.csproj.user
+.ReSharper*/
+_ReSharper*/
+
+# === Node.js / npm ===
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log*
+
+# === Build & Frontend ===
+dist/
+build/
+.next/
+out/
+coverage/
+.cache/
+
+# === Environment & Secrets ===
+.env
+.env.local
+.env.*.local
+appsettings.*.json
+secrets.json
+
+# === Logs ===
+*.log
+logs/
+npm-debug.log*
+
+# === IDEs ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === OS Files ===
+*.tmp
+*.bak
+ehthumbs.db

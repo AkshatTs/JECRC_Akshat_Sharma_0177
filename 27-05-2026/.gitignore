@@ -1,0 +1,162 @@
+# .gitignore for 27-05-2026 Projects
+# This file prevents dependency folders and build artifacts from being committed
+# Each of the 3 projects may have different stacks, so we ignore them all
+
+# ============================================================================
+# BACKEND DEPENDENCIES & BUILD ARTIFACTS
+# ============================================================================
+
+# .NET Build Outputs (C#, ASP.NET)
+# These are generated during build and should never be committed
+bin/                    # Debug/Release compiled binaries
+obj/                    # Intermediate object files
+.vs/                    # Visual Studio IDE files
+.vscode/                # VS Code settings
+*.suo                   # Visual Studio Solution User Options
+*.user                  # Project user settings
+*.csproj.user           # C# Project user settings
+*.vbproj.user           # VB.NET Project user settings
+.ReSharper*/            # ReSharper IDE cache
+_ReSharper*/            # ReSharper cache
+
+# Node.js / npm Modules (if using Node.js in backend)
+node_modules/           # npm dependencies - DO NOT COMMIT (can be 100K+ files)
+package-lock.json       # npm dependency lock (lock files determine exact versions on install)
+yarn.lock               # yarn dependency lock
+pnpm-lock.yaml          # pnpm dependency lock
+npm-debug.log*          # npm debug logs
+yarn-error.log*         # yarn error logs
+
+# Python Dependencies (if using Python)
+__pycache__/            # Python bytecode cache
+*.pyc                   # Python compiled files
+*.pyo                   # Python optimized compiled files
+*.egg-info/             # Python package metadata
+venv/                   # Python virtual environment
+env/                    # Alternative Python virtual environment
+.Python                 # Python installation flag
+
+# ============================================================================
+# FRONTEND BUILD ARTIFACTS & DEPENDENCIES
+# ============================================================================
+
+# React, Angular, Vue, Next.js Build Outputs
+dist/                   # Production build directory
+build/                  # Build directory
+.next/                  # Next.js build cache
+out/                    # Static export directory
+.nuxt                   # Nuxt build
+.cache/                 # Build cache
+coverage/               # Test coverage reports
+.nyc_output/            # nyc (Istanbul) coverage output
+
+# Node.js in Frontend
+node_modules/           # npm/yarn dependencies
+.pnpm-debug.log*        # pnpm debug logs
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+
+database/               # Skip local database files from version control
+*.db                    # SQLite database
+*.sqlite                # SQLite database
+*.sqlite3               # SQLite3 database
+*.mdf                   # SQL Server database file
+*.ldf                   # SQL Server log file
+*.log                   # Database logs
+
+# ============================================================================
+# ENVIRONMENT & SECRETS (CRITICAL - NEVER COMMIT!)
+# ============================================================================
+
+.env                    # Local environment variables
+.env.local              # Local-only env vars
+.env.*.local            # Environment-specific local vars
+.env.development        # Development env (DO NOT COMMIT)
+.env.production         # Production secrets (DO NOT COMMIT)
+appsettings.Development.json   # ASP.NET dev settings
+appsettings.Production.json    # ASP.NET prod settings
+secrets.json            # .NET UserSecrets file
+.aws/                   # AWS credentials
+.azure/                 # Azure credentials
+credentials             # Generic credentials files
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+
+.vscode/                # VS Code workspace settings
+.idea/                  # JetBrains IDE (Rider, IntelliJ, etc)
+.fleet/                 # JetBrains Fleet
+.sublime-project        # Sublime Text project
+.sublime-workspace      # Sublime Text workspace
+*.swp                   # vim swap files
+*.swo                   # vim swap files
+*~                      # Temporary backup files
+.DS_Store               # macOS folder attributes
+Thumbs.db               # Windows folder thumbnails
+
+# ============================================================================
+# LOGS & DEBUGGING
+# ============================================================================
+
+logs/                   # Log directory
+*.log                   # Log files
+debug.log               # Debug log
+npm-debug.log           # npm debug log
+yarn-debug.log          # yarn error log
+.serilog/               # Serilog logging directory
+
+# ============================================================================
+# DOCKER & CONTAINER FILES
+# ============================================================================
+
+docker-compose.override.yml  # Local docker compose overrides
+.dockerignore            # Docker ignore file metadata
+
+# ============================================================================
+# TEMPORARY & OS FILES
+# ============================================================================
+
+*.tmp                   # Temporary files
+*.bak                   # Backup files
+*.swp                   # Swap files
+ehthumbs.db             # Windows folder cache
+.directory              # Directory metadata
+.vagrant/               # Vagrant VM directory
+
+# ============================================================================
+# BUILD TOOLS ARTIFACTS
+# ============================================================================
+
+dist-ssr/               # SSR dist
+.env.*.local            # Environment overrides
+storybook-static/       # Storybook builds
+
+# ============================================================================
+# Why These Matter:
+# ============================================================================
+#
+# 1. node_modules/ = 100,000+ to 200,000+ files per folder
+#    - Regenerated with: npm install, yarn install, pnpm install
+#    - NEVER commit - let each developer install their own
+#
+# 2. bin/ & obj/ = Compiled .NET artifacts (10,000-50,000+ files)
+#    - Regenerated with: dotnet build
+#    - Project-specific and platform-specific
+#
+# 3. Dependencies = Platform & developer specific
+#    - Mac vs Windows might have different binaries
+#    - Your Node version vs team member's Node version
+#
+# 4. Secrets = SECURITY RISK
+#    - .env files contain passwords, API keys, connection strings
+#    - If committed to GitHub, anyone can see your secrets
+#    - GitHub also emails you if secrets are detected
+#
+# If you accidentally committed these, you must:
+#   git rm -r --cached <folder>
+#   git commit -m "Remove <folder> from version control"
+#
+# ============================================================================

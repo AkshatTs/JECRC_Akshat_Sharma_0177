@@ -1,0 +1,52 @@
+# .gitignore for Logistics & Supply Chain Tracking System
+
+# Backend (.NET/API)
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/.vscode/
+backend/appsettings.Development.json
+backend/appsettings.Production.json
+backend/**/*.user
+backend/**/*.suo
+
+# Backend (Node.js if used)
+backend/node_modules/
+backend/package-lock.json
+backend/yarn.lock
+backend/dist/
+backend/build/
+
+# Frontend (React/Angular/Vue/Next.js)
+frontend/node_modules/
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+appsettings.*.json
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS & Temp Files
+*.tmp
+*.bak
+ehthumbs.db
